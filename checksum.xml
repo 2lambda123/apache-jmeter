@@ -9,6 +9,7 @@
     <trusted-key id='379ce192d401ab61' group='com.diffplug.durian' />
     <trusted-key id='8d7f1bec1e2ecae7' group='com.fasterxml.jackson.core' />
     <trusted-key id='c9fbaa83a8753994' group='com.fasterxml.jackson.core' />
+    <trusted-key id='8d7f1bec1e2ecae7' group='com.fasterxml.jackson.dataformat' />
     <trusted-key id='4c00043bec5cb7cb' group='com.fifesoft' />
     <trusted-key id='af10873874630863' group='com.flipkart.zjsonpatch' />
     <trusted-key id='379ce192d401ab61' group='com.formdev' />
@@ -128,6 +129,7 @@
     <trusted-key id='31474e5e7c6b7034' group='org.apache.ftpserver' />
     <trusted-key id='cbaebe39a46c4ca1' group='org.apache.geronimo.specs' />
     <trusted-key id='ecdfea3cb4493b94' group='org.apache.geronimo.specs' />
+    <trusted-key id='6a65176a0fb1cd0b' group='org.apache.groovy' />
     <trusted-key id='7c25280eae63ebe5' group='org.apache.httpcomponents' />
     <trusted-key id='7c25280eae63ebe5' group='org.apache.httpcomponents.client5' />
     <trusted-key id='7c25280eae63ebe5' group='org.apache.httpcomponents.core5' />
@@ -143,6 +145,7 @@
     <trusted-key id='e91287822fdb81b1' group='org.apache.xbean' />
     <trusted-key id='5b93f1df7cdb6dea' group='org.apache.xmlgraphics' />
     <trusted-key id='85911f425ec61b51' group='org.apiguardian' />
+    <trusted-key id='0cc0b712fee75827' group='org.assertj' />
     <trusted-key id='e2b3d84202b812d9' group='org.assertj' />
     <trusted-key id='b341ddb020fcb6ab' group='org.bouncycastle' />
     <trusted-key id='be84d764623a3644' group='org.brotli' />
