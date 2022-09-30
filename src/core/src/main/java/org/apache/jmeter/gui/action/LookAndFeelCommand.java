@@ -200,11 +200,7 @@ public class LookAndFeelCommand extends AbstractAction {
     }
 
     public static boolean isDarklafTheme() {
-        return "Darklaf".equalsIgnoreCase(UIManager.getLookAndFeel().getID()); // $NON-NLS-1$
-    }
-
-    public static boolean isDark() {
-        return isDarklafTheme() && Theme.isDark(LafManager.getTheme());
+        return LafManager.isInstalled();
     }
 
     public static void activateLookAndFeel(String command) {
