@@ -17,6 +17,7 @@
 
 package org.apache.jmeter.samplers;
 
+import io.github.pixee.security.ObjectInputFilters;
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileInputStream;
@@ -88,6 +89,7 @@ public class DiskStoreSampleSender extends AbstractSampleSender implements Seria
         }
         try (InputStream fis = new FileInputStream(temporaryFile);
                 ObjectInputStream ois = new ObjectInputStream(fis)){
+            ObjectInputFilters.enableObjectFilterIfUnprotected(ois);
             Object obj;
             while((obj = ois.readObject()) != null) {
                 if (obj instanceof SampleEvent) {
