@@ -17,6 +17,7 @@
 
 package org.apache.jmeter.protocol.jms.sampler.render;
 
+import static io.github.pixee.security.XMLInputFactorySecurity.hardenFactory;
 import static java.lang.String.format;
 
 import java.io.File;
@@ -90,7 +91,7 @@ class ObjectMessageRenderer implements MessageRenderer<Serializable> {
 
     /** Try to determine encoding based on XML prolog, if none <code>null</code> is returned. **/
     protected String findEncoding(String filename) {
-        XMLInputFactory factory = XMLInputFactory.newInstance();
+        XMLInputFactory factory = hardenFactory(XMLInputFactory.newInstance());
         factory.setProperty(XMLInputFactory.SUPPORT_DTD, Boolean.FALSE);
         try (FileInputStream input = new FileInputStream(filename)) {
             XMLStreamReader reader = factory.createXMLStreamReader(input);
